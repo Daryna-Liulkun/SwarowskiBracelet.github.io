@@ -1,0 +1,66 @@
+header {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+header h1,
+header h2,
+header a {
+    color: var(--txt-color-1);
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'DrukWideBold';
+    font-size: 17dvw;
+}
+
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* вирімнювання по основній осі */
+    align-items: center;
+    gap: 20px;
+    min-height: 100dvh;
+}
+
+.go {
+    padding-bottom: 40px;
+}
+
+/*temporary code*/
+
+.col {
+    background-color: #b1b1b1;
+    min-height: 100px;
+}
+
+.col.c1 {
+    width: 20%;
+    /* padding-right: 30px; */
+}
+
+.col.c2 {
+    width: 20%;
+}
+
+.col.c3 {
+    width: 50%;
+    /* padding-left: 30px; */
+}
+
+@media screen and (max-width: 767px)  {
+
+}
+
+@media screen and (max-width: 580px)  {
+    .cols {
+        gap: 0;
+
+    }
+    /* .col.c1,
+    .col.c2,
+    .col.c3 */
+}
