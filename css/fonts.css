@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url(../fonts/DrukWideBold.eot);
+    src: url(../fonts/DrukWideBold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/DrukWideBold.otf) format('otf'),
+         url(../fonts/DrukWideBold.woff) format('woff'),
+         url(../fonts/DrukWideBold.woff2) format('woff2');
+  }

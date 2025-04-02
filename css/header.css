@@ -11,11 +11,6 @@ header a {
     text-align: center;
 }
 
-header h1 {
-    font-family: 'DrukWideBold';
-    font-size: 17dvw;
-}
-
 
 .cols {
     display: flex;
@@ -28,6 +23,28 @@ header h1 {
 
 .go {
     padding-bottom: 40px;
+}
+
+
+.containerbutton {
+    display: flex;
+    justify-content: center; /* Центрує по горизонталі */
+    align-items: center; /* Центрує по вертикалі */
+}
+
+
+.button1 {
+    background: rgba(125, 125, 125, 0.2); /* Світліший білий */
+    backdrop-filter: blur(10px); /* Розмиття фону */
+    border: none; /* Видаляємо обводку */
+    border-radius: 1.3rem; /* Менш заокруглені кути */
+    padding: 1.5rem 4rem; /* Внутрішні відступи */
+    font-size: 2rem; /* Розмір тексту */
+    color: #ffffff; /* Темний текст */
+}
+
+.button2 {
+
 }
 
 /*temporary code*/

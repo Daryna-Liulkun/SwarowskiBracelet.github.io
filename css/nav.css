@@ -1,11 +1,13 @@
 nav {
-    /* background: var(--bg-nav-1); */
-    background: transparent; /* Колір фону навігаційної панелі 1 */
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: 95;
+}
+
+nav h1 {
+    color: var(--logo-color-1);
+    font-size: 10dvw;
+    text-align: center;
 }
 
 nav.topfixed {
@@ -13,23 +15,14 @@ nav.topfixed {
     position: fixed;
 }
 
-/* nav::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform: translateY(-100%);
-    transition: transform .1s ease;
-} */
-
 nav.topfixed::before {
     transform: none;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;     /* Схема вирівнювання лого та меню (desktop) по основній осі (main axis) */
+    flex-direction: column;
+    justify-content: flex-start;     /* Схема вирівнювання лого та меню (desktop) по основній осі (main axis) */
     align-items: center;                /* Схема вирівнювання лого та меню (desktop) по додатковій осі (cross axis) */
     margin-left: auto;                  /* Центрування блоку всередині nav по-горизонталі */
     margin-right: auto;                 /* Центрування блоку всередині nav по-горизонталі */
@@ -51,44 +44,12 @@ nav.topfixed::before {
     padding-bottom: 12px;   /* Внутрішні відступи після прокрутки */
 }
 
-.logo {
-    display: flex;
-    width: var(--logo-width);
-    line-height: .7;
-    transform: scale(1);
-    transform-origin: left center;
-    align-items: center;    /* Вирівнювання по додатковій осі */
-    transition: all .3s ease-in-out;
-    text-decoration: none;
-}
-
-.logo img {
-    max-width: 50%;
-    height: auto;
-}
-
 .logo:hover {
     text-decoration: none;
 }
 
 .topfixed .logo {
-    transform: scale(.8);
-    opacity: 1;
-    display: flex;
-}
 
-.logo img {
-    margin-right: 15px;
-}
-
-.logo span {
-    color: var(--logo-color-1);
-    font-size: .8rem; /* 0.85 * font-size body */
-    line-height: 1.4;
-    letter-spacing: .035em;
-    font-weight: 600;
-    text-transform: uppercase;
-    max-width: 80px;
 }
 
 nav .navbar {
@@ -136,8 +97,19 @@ nav .navbar {
     vertical-align: middle;
 }
 
+.navigation li a {
+    border-radius: var(--bord-radius);
+    display: inline-block;
+    padding: 3px 8px;
+    
+}
+
 a:hover, a:focus, a:active {
     text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: var(--bg-nav-1);
 }
 
 .overlay {

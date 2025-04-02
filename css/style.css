@@ -1,22 +1,3 @@
-/* style.css — Загальні властивості елементів */
-@font-face {
-    font-family: 'DrukWideBold';
-    src: url('./fonts/DrukWideBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-
-    /* // <weight>: Use a value from 100 to 800
-    // <uniquifier>: Use a unique and descriptive class name */
-    .suse {
-    font-family: "SUSE", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    }
-}
-
-
-
 html, body {
     font-family: "SUSE", sans-serif;  /* Гарнітура для основного тексту */
     font-size: 14px;        /* Розмір шрифта основного тексту */
@@ -25,10 +6,12 @@ html, body {
     scroll-behavior: smooth;/* Плавна прокрутка під час переходу за якорем (ancor) */
 }
 
+.druk-text {
+    font-family: 'DrukWideBold', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "SUSE", sans-serif;   /* Гарнітура для заголовків */
-    font-weight: 600;                       /* Накреслення для заголовків */
-    font-size: 80px; 
+    font-family: 'DrukWideBold';   /* Гарнітура для заголовків */
     line-height: 1.2;                       /* Міжрядковий інтервал для заголовків в %/100 */
     letter-spacing: 0.005em;                /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
     margin: 0 0 .5em;                       /* Відступ знизу після заголовку */
@@ -36,7 +19,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 2rem; }     /* Висота заголовків у відносних величинах */
-h2 { font-size: 1.5rem; }   /* rem - відносний розмір *(body font-size) */
+h2 { 
+    font-size: 5rem;  /* rem - відносний розмір *(body font-size) */
+    text-shadow: 0px 4px 50px rgba(0, 0, 0, 1.5);
+
+}  
 h3 { font-size: 1.35rem; }
 
 p {
